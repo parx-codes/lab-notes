@@ -1,0 +1,3 @@
+nel main3 il figlio ha una sleep(200). quando faccio "ps aux | grep 30481" vedrò che l'unico ancora in esecuzione è per l'appunto il figlio.
+con "ps -o pid,ppid,stat,cmd -p 30481" il pid su cui abbiamo richiesto info, il pid del padre, lo stato e il file da cui è stato generato.
+notiamo come il ppid non è 30480 (il padre originario) ma 2337, dunque il figlio orfano è stato adottato da systemd.
