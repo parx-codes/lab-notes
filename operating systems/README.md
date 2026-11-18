@@ -11,10 +11,6 @@ These C lab exercises explore how Linux processes and threads run, share data, a
 | [semaphore](semaphore/) | Protecting a shared counter with a process-shared semaphore and coordinating producers and consumers with single-slot and circular buffers. The circular-buffer exercise includes a lab handout. |
 | [shell example](shell%20example/) | A small shell that reads a command, starts it with `fork()` and `execvp()`, and waits for it to finish. |
 
-## Self-assessment exercises
-
-[Self assessment 1](self%20assessment%201/) contains a producer–consumer exercise using POSIX shared memory, semaphores, a state vector, and consumers that select items by key. It includes the assignment PDF, C sources, and a Makefile.
-
 ## Running the examples
 
 Use a Linux environment with a C compiler. Build the examples from their own directories. Use the local Makefile where provided and compile standalone pthread examples with `-pthread`.
